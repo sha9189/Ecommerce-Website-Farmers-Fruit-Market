@@ -3,7 +3,7 @@
 #### Video Demo:  <URL HERE>
 
 #### Description:
-This is the implementation of an E-commerce website for buying fruits from the farmer's market. Some of the abilities the website provides are
+This is the implementation of an E-commerce website for buying fruits from the farmer's market. Some of the abilities that the website provides are
 - Create a new user account
 - Sign in
 - View all items currently available
@@ -12,7 +12,7 @@ This is the implementation of an E-commerce website for buying fruits from the f
 
 Efficient error checking and handling has been implmented at each step.
 
-Technical Design:
+Technologies Used: 
 - Database solution: SQLite
 - Backend: Flask
 - Frontend: HTML, CSS, Javascript, Bootstrap framework
