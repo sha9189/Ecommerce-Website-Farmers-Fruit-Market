@@ -1,7 +1,5 @@
 # E-Commerce Website - Farmer's Fruit Market
 
-#### Video Demo:  [https://youtu.be/0rZZNDngXD8](https://youtu.be/0rZZNDngXD8)
-
 #### Description:
 This is the implementation of an E-commerce website for buying fruits from the farmer's market. Some of the abilities that the website provides are
 - Create a new user account
