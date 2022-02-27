@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+
+{% block main %} 
+        <div class="container">
+            {% for prods in products %}
+                <div class="row justify-content-between my-5">
+                    {% for prod in prods %}
+                        <div class="col-sm-2 border border-secondary border-3 rounded shadow py-2">
+                    
+                            <div>
+                                <img src="/static/images/fruits/{{ prod }}.jpg" class="img-fluid my-1" alt="{{ prod }}">
+                            </div>
+                            <div class="text-uppercase">{{ prod }}</div>
+                            <div>
+                                <form action="/" method="post">
+                                        <input type="hidden" name="item" value="{{ prod }}" class="form-control">
+                                        <button type="submit" class="btn btn-outline-success">Add to cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

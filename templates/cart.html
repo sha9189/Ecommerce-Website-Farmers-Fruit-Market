@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cart
+{% endblock %}
+
+
+{% block main %}
+<div class="container">
+    <table class="w-25 mx-auto my-4 table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col" >Item</th>
+                <th scope="col" >Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item, quantity in cart.items() %}
+                <tr>
+                    <td class="text-start">{{ item }}</td>
+                    <td class="text-end">{{ quantity }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    <form action="/order" method="post">
+        <button type="submit" class="btn btn-outline-primary">Place Order</button>
+    </form>
+</div>
+
+{% endblock %}
